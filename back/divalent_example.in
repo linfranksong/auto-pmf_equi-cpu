@@ -1,0 +1,26 @@
+mode normal
+prmtop 126.prmtop
+inpcrd 126.inpcrd
+coord_type distance
+coord_atm1_num 3
+coord_atm2_num 8
+forward_limit 11.01
+reverse_limit 2.44
+md_min_steps  20000
+md_nvt_steps 100000
+md_snpt_steps 10000
+md_npt_steps 500000
+md_md_steps  500000
+smd_forward_md_steps  500000
+smd_reverse_md_steps  500000
+us_window_space 2.44 5.0 0.05 5.0 11.01 0.1
+us_window_restraint 2.44 5.0 200 5.0 11.01 100
+test_us_md_steps 100000
+us_window_optimize 2.44 11.01 30
+center_deviation 1.6
+us_npt_steps 1000000
+us_md_steps  4000000
+slm_header header.slm
+wham_tol 0.00001
+wham_window 300
+plot_grid 0.1
